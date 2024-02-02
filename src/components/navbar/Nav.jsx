@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Logo900x400 from "../../assets/logo/logo.svg";
+import Theme_Switch from "../theme-switcher/Theme_Switch";
 
 const navigation = [
   { name: "Home", href: "#", current: true },
@@ -16,7 +17,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-base-100 pt-1 pb-1">
+    <Disclosure as="nav" className="bg-base-100/10 pt-1 pb-1">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -61,6 +62,11 @@ export default function Example() {
                   </div>
                 </div>
               </div>
+
+              <div className="hidden md:flex">
+                <Theme_Switch></Theme_Switch>
+              </div>
+
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   type="button"

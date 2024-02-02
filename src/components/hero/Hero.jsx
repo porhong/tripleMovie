@@ -3,7 +3,7 @@ import React from "react";
 const Hero = (props = { title, content, img }) => {
   return (
     <>
-      <div className="hero lg:bg-base-200 w-fit mx-auto mt-3 rounded-2xl shadow-md shadow-neutral">
+      <div className="hero lg:bg-base-200 mx-auto mt-10 rounded-2xl shadow-md shadow-neutral">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
             src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
